@@ -1,0 +1,24 @@
+1° Criar um aplicativo  ionic start mapsApp blank --type=angular
+
+2° instalar o capacitor do google - npm install @capacitor/google-maps
+                                    npx cap sync (caso de erro trocar npx por ionic)
+
+   instalar o geolocation - npm install @capacitor/geolocation                                   
+                          npx cap sync          
+
+3° adicionar a key do google maps no src/environments.ts = mapsKey: 'sua-chave' 
+
+4° Fazer as importações do custom elements e schemas no home.modules.ts
+
+5° importar o google maps no home.page.ts (import { GoogleMap } from '@capacitor/google-maps';)
+
+6° criação dos metodos para o funcionamento do mapa
+
+createMap - Metodo para gerar o mapa
+
+getPosition - Metodo para pegar a posicao atual
+
+addMarker - criar um marcador na posição atual
+
+zoomInMarker - dar zoom no marcador
+
